@@ -336,3 +336,19 @@ section{
 
     }
 
+/* *************************************************Formulario********************************************* */
+
+.form{
+    border: solid 2px red;
+    margin-top: 70px;
+    margin-left: 270px;
+    width:440px;
+    background-color: aqua;
+}
+
+.form p label{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+   padding-left: 10px;
+
+}

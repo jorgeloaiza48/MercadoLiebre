@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet"> <!--tipografía -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" /> <!--ícono de búsqueda -->
+    <script src="https://kit.fontawesome.com/c0b01d51a5.js" crossorigin="anonymous"></script> <!--para íconos de  fontawesome-->
+    
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Formulario de registro MercadoLiebre</title>
+</head>
+
+
+<body>
+    
+    <div class="form">
+        <form>
+            <p>
+                <label for="nombre">Nombres y apellidos</label>
+                <input type="text" name="nombre">
+            </p>
+
+            <p>
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" name="usuario">
+            </p>
+
+            <p>
+                <label for="fechaNacimiento">Fecha de nacimiento</label>
+                <input type="date" name="fechaNacimiento">
+            </p>
+        
+            <p>
+                <label for="Domicilio">Domicilio</label>
+                <input type="text" name="Domicilio">
+            </p>
+        
+            <p>
+                <label for="interes">Perfil de usuario ===></label>
+                <label>Comprar</label>
+                <input type="radio" name="interes" value="si">
+                <label>Vender</label>
+                <input type="radio" name="interes" value="no">
+            </p>
+
+            <p>
+                <label>Intereses</label><br>
+                <label>Electrónica</label>
+                <input type="checkbox" name="interes" value="Electro"> <br>
+                <label>Moda</label>
+                <input type="checkbox" name="interes" value="Moda"> <br>
+                <label>Hogar</label>
+                <input type="checkbox" name="interes" value="Hogar"><br> 
+                <label>Jueguetería</label>
+                <input type="checkbox" name="interes" value="Juguetería"> <br>
+                <label>Vida sana</label>
+                <input type="checkbox" name="interes" value="Vida-sana"> <br>
+            </p>
+
+            <p>
+                <labe>Foto de usuario</labe>
+                <input type="file" accept=".jpg,.jpeg,.png">
+            </p>
+
+            <p>
+                <label>Contraseña</label>
+                <input type="password" name="clave">
+            </p>
+
+            <p>
+                <label>Confirmar Contraseña</label>
+                <input type="password" name="clave">
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="submit" value="Borrar">
+            </p>
+
+            
+
+        </form>
+    </div>
+
+</body>
+</html>
