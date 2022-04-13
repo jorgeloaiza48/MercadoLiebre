@@ -1,0 +1,338 @@
+/* body{
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+} */
+
+*{
+    box-sizing: border-box;
+}
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    } */
+
+header{
+    width: 90vw;    
+    margin: auto;
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+main{
+    width: 90vw;
+    background-color: #ebebeb;
+    margin-bottom: 20px;
+    margin: auto;
+           
+}
+
+
+/* main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    } */
+
+
+
+h1{
+    font-size: 24px;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.dto{
+    font-size: 16px;
+}
+
+footer{
+    font-size: 12px;
+    text-align: center;  
+}
+
+.burger-menu{
+    background-color:#1259c3;;
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    color: white;
+    border-radius: 15%;
+    text-align: center;
+    line-height: 45px;
+
+}
+
+section{
+    line-height: 1px;
+    padding: 10px;
+
+}
+
+.fa-credit-card {
+    font-size:xx-large;
+    color:#1259c3;;
+    padding: 5px;
+    
+}
+
+.fa-gift {
+    font-size:xx-large;
+    color:#1259c3;;
+    padding: 5px;
+    
+}
+
+.fa-user-shield{
+    font-size:xx-large;
+    color:#1259c3;;
+    padding: 5px;
+    
+}
+
+.footer-c{
+    
+    border-style:none;
+    margin: auto;
+    
+}
+
+.just{
+    background-color:white;
+    width: 295px;
+    height: 95px;
+    margin: auto;
+    color: black;
+    line-height: 15px;
+    text-align: justify;
+    }
+
+    .delivery .fa-truck{
+        color: green;
+        
+
+    }
+
+    .delivery .truck-circle{
+        background-color: white;
+        border: solid 1px green;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding-left: 10px;
+        padding-top: 10px; 
+        margin: -45px 0px 0px 210px;  
+       
+           }
+
+    .delivery{
+        border-top: solid 1px #ebebeb;
+        padding: 25px;
+        background-color: white;
+        margin-bottom: 20px;
+        top: 20rem;
+        flex-wrap: wrap;
+        display: flex;   
+       
+       
+    }
+
+    .delivery .dto{
+        flex-grow: 0.7; 
+        /* align-self: flex-start; */
+        color: green;
+        width: 60%;
+        
+        }
+
+    .delivery .precio{
+        flex-grow: 0.3;
+        /* align-self: flex-end; */
+      
+              
+    }
+
+    .delivery .descripcion{
+       width: 100%;
+
+    }
+
+    
+    
+
+    /* ########################### Media Quieries ##################### */
+
+    /* Navegación en móviles */
+    @media(min-width: 361px){
+        .delivery .descripcion{
+            color: white;                      
+        }
+        .site-navbar{
+            display: none;
+            }
+
+        .nav-bar{
+            display: none;
+        }    
+    }
+
+    /* Navegación en tablets */
+    @media(min-width:768px){
+     
+     .burger-menu{
+         display: none;
+     }
+
+     .header-principal{
+         display: flex;
+         justify-content: space-around;
+         
+     }
+
+     .header-principal header-principal-item {
+         width: 30px;
+                  
+     }
+
+     .header-principal img{
+         width: 150px;
+     }
+
+     .header-principal-item h4{
+         font-size: small;
+         color: black;                 
+     }
+
+     .nav-bar{
+         display: flex;  
+         height:  50px;
+         justify-content: space-between;
+     }
+
+    .site-navbar{
+        display: flex;   
+       
+    }
+
+    .left-navbar{
+        display: flex;
+        justify-content: space-around;
+        
+           }
+
+   
+    .site-navbar ul{
+        display: flex;
+        justify-content: space-around;
+       
+    }
+
+     
+
+    .site-navbar nav ul li{
+        margin:  7px; 
+        }
+
+
+
+    .site-navbar nav ul li a{
+       
+        font-size: 11px;
+        text-decoration: none;
+        font-weight: bold;
+       
+        
+    }
+
+    .site-navbar li{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+    }
+        
+    
+
+    
+
+
+      
+     .principal{
+         display: flex;
+         flex-wrap: wrap;
+         
+     }
+
+     .principal div{
+         width: 335px;
+     }
+
+     .principal-ofertas{
+         display: flex;
+         flex-wrap: wrap;
+         
+     }
+
+     .principal-ofertas-item{
+         width: 335px;
+        
+         
+     }
+
+    }
+
+
+    
+
+    /* Navegación en desktop */
+    @media(min-width:992px){
+        .delivery, main{
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        }
+
+        .site-navbar{
+            display:inline;
+        }
+
+        .burger-menu{
+            display: none;
+        }
+
+        .principal{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+   
+        .principal div{
+            width: 215px;
+        }
+   
+        .principal-ofertas{
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+   
+        .principal-ofertas-item{
+            width: 215px;
+           
+            
+        }
+   
+
+
+    }
+
