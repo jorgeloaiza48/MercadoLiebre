@@ -1,17 +1,12 @@
-/* body{
-    background-color: #EAC926;
+body{
+    /* background-color: #EAC926; */
     font-family: 'Roboto', sans-serif;
-} */
+}
 
 *{
     box-sizing: border-box;
 }
 
-/* *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    } */
 
 header{
     width: 90vw;    
@@ -206,8 +201,9 @@ section{
                   
      }
 
-     .header-principal img{
+     .header-principal-item img{
          width: 150px;
+         margin: 12px;
      }
 
      .header-principal-item h4{
@@ -263,12 +259,7 @@ section{
         
     }
         
-    
-
-    
-
-
-      
+        
      .principal{
          display: flex;
          flex-wrap: wrap;
@@ -293,8 +284,29 @@ section{
 
     }
 
+    .search-container form{
+        display: flex;
+        width:max-content;
+        height:60px;
+        margin: 12px;
+    }
 
-    
+    .search-container form input{
+        height:25px;
+    }
+
+
+    .search-container form button{
+        width: fit-content;
+        height: 25px;
+    }
+
+    .search-container form button fa-search{
+    font-size: larger;      
+        
+    }
+
+   
 
     /* Navegación en desktop */
     @media(min-width:992px){
@@ -338,12 +350,27 @@ section{
 
 /* *************************************************Formulario********************************************* */
 
-.form{
-    border: solid 2px red;
-    margin-top: 70px;
-    margin-left: 270px;
-    width:440px;
-    background-color: rgb(240, 247, 247);
+.login-main{
+    background-color: #ebebeb;
+    width: 50%;
+}
+
+.login-main .testbox-form-login form h2{
+    text-align: center;
+}
+
+main form{
+     background-color: #ebebeb ;
+}
+
+.testbox-form-login{
+    border-style: groove;
+    
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
+    
+   
 }
 
 .form p label{
@@ -352,3 +379,171 @@ section{
    padding-left: 10px;
 
 }
+
+
+html, body {
+    min-height: 100%;
+    }
+    body, div, form, input, select, p { 
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+    }
+    h1 {
+    margin: 15px 0;
+    font-weight: 400;
+    }
+    .testbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 3px;
+    /* border: ridge 2px red; */
+    border-style: ridge;
+    width: 450px;
+    margin: auto;
+    }
+
+    form {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    
+    }
+    input, select, textarea {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    }
+    input {
+    width: calc(100% - 10px);
+    padding: 5px;
+    }
+    select {
+    width: 100%;
+    padding: 7px 0;
+    background: transparent;
+    }
+    textarea {
+    width: calc(100% - 6px);
+    }
+    .item {
+    position: relative;
+    margin: 10px 0;
+    }
+    .item:hover p, .item:hover i {
+    color: #095484;
+    }
+    input:hover{
+    box-shadow: 0 0 5px 0 #095484;
+    }
+    .preferred-metod label {
+    display: block;
+    margin: 5px 0;
+    }
+    .preferred-metod:hover input {
+    box-shadow: none;
+    }
+    .preferred-metod-item input, .preferred-metod-item span {
+    width: auto;
+    vertical-align: middle;
+    }
+    .preferred-metod-item input {
+    margin: 0 5px 0 0;
+    }
+    input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    }
+    .item i, input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    font-size: 20px;
+    color: #a9a9a9;
+    }
+    .item i {
+    right: 1%;
+    top: 30px;
+    z-index: 1;
+    }
+    [type="date"]::-webkit-calendar-picker-indicator {
+    right: 0;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+    }
+    .btn-block {
+    margin-top: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+   
+    }
+    button {
+    width: 150px;
+    padding: 10px;
+    border: none;      
+    /* -webkit-border-radius: 5px;  */
+    /* -moz-border-radius: 5px;  */
+    border-radius: 5px; 
+    background-color: #095484;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    }
+    button:hover {
+    background-color: #0666a3;
+    }
+    .testbox h2{
+        text-align: center;
+    }
+
+    .nom-apellido{
+        display: flex;
+        justify-content: space-around;
+    }
+  
+    /* Muestra los campos input en amarillo */
+    /* form input:required{
+        border: solid 2px yellow;
+    } */
+
+    /*Si el valor que el usuario escribe es valido, obtendra un color verde*/
+    form input[type="text"]:required:valid{
+        border:3px solid green;
+    }
+
+    /*Si el valor ingresado no es válido, el color sera rojo*/
+    form input[type="text"]:focus:required:invalid{
+    border:3px solid red;
+    }
+
+     /*Si el valor que el usuario escribe es valido, obtendra un color verde*/
+     form input[type="email"]:required:valid{
+        border:3px solid green;
+    }
+
+    /*Si el valor ingresado no es válido, el color sera rojo*/
+    form input[type="email"]:focus:required:invalid{
+    border:2px solid red;
+        }
+    
+
+
+ 
+    @media (min-width: 568px) {
+    .name-item, .city-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .name-item input, .city-item input {
+    width: calc(50% - 20px);
+    }
+    .city-item select {
+    width: calc(50% - 8px);
+    }
+    }
