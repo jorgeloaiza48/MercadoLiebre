@@ -15,11 +15,11 @@
 
 <body>
     
-    <div class="form">
+    <!-- <div class="form">
         <form>
             <p>
                 <label for="nombre">Nombres y apellidos</label>
-                <input type="text" name="nombre">
+                <input type="text" name="nombre" placeholder="Igrese su nombre">
             </p>
 
             <p>
@@ -35,6 +35,16 @@
             <p>
                 <label for="Domicilio">Domicilio</label>
                 <input type="text" name="Domicilio">
+            </p>
+
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="name@example.com" >
+            </p>
+
+            <p>
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" placeholder="123-45-678">
             </p>
         
             <p>
@@ -82,7 +92,328 @@
             
 
         </form>
+    </div> -->
+
+   
+    <style>
+        html, body {
+        min-height: 100%;
+        }
+        body, div, form, input, select, p { 
+        padding: 0;
+        margin: 0;
+        outline: none;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 14px;
+        color: #666;
+        line-height: 22px;
+        }
+        h1 {
+        margin: 15px 0;
+        font-weight: 400;
+        }
+        .testbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        padding: 3px;
+        border: solid 2px red;
+        width: 450px;
+        margin: auto;
+        }
+        form {
+        width: 100%;
+        padding: 20px;
+        background: #fff;
+        /* box-shadow: 0 2px 5px #ccc;  */
+        }
+        input, select, textarea {
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        }
+        input {
+        width: calc(100% - 10px);
+        padding: 5px;
+        }
+        select {
+        width: 100%;
+        padding: 7px 0;
+        background: transparent;
+        }
+        textarea {
+        width: calc(100% - 6px);
+        }
+        .item {
+        position: relative;
+        margin: 10px 0;
+        }
+        .item:hover p, .item:hover i {
+        color: #095484;
+        }
+        input:hover, select:hover, textarea:hover, .preferred-metod label:hover input {
+        box-shadow: 0 0 5px 0 #095484;
+        }
+        .preferred-metod label {
+        display: block;
+        margin: 5px 0;
+        }
+        .preferred-metod:hover input {
+        box-shadow: none;
+        }
+        .preferred-metod-item input, .preferred-metod-item span {
+        width: auto;
+        vertical-align: middle;
+        }
+        .preferred-metod-item input {
+        margin: 0 5px 0 0;
+        }
+        input[type="date"]::-webkit-inner-spin-button {
+        display: none;
+        }
+        .item i, input[type="date"]::-webkit-calendar-picker-indicator {
+        position: absolute;
+        font-size: 20px;
+        color: #a9a9a9;
+        }
+        .item i {
+        right: 1%;
+        top: 30px;
+        z-index: 1;
+        }
+        [type="date"]::-webkit-calendar-picker-indicator {
+        right: 0;
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+        }
+        .btn-block {
+        margin-top: 20px;
+        text-align: center;
+        }
+        button {
+        width: 150px;
+        padding: 10px;
+        border: none;      
+        -webkit-border-radius: 5px; 
+        -moz-border-radius: 5px; 
+        border-radius: 5px; 
+        background-color: #095484;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+        }
+        button:hover {
+        background-color: #0666a3;
+        }
+        .testbox h2{
+            text-align: center;
+        }
+        @media (min-width: 568px) {
+        .name-item, .city-item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+        .name-item input, .city-item input {
+        width: calc(50% - 20px);
+        }
+        .city-item select {
+        width: calc(50% - 8px);
+        }
+        }
+      </style>
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="header-principal"> 
+                <div class="header-principal-item">
+                    <img src = "/img/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+                </div>
+                
+                        
+                <div class="header-principal-item">
+                                <!-- barra de búsqueda -->
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                          <input type="text" placeholder="Search.." name="search">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>    
+            
+                    <div class="header-principal-item">
+                        <h4><i class="fa-solid fa-hand-holding-dollar"></i>Compra en cuotas y sin tarjeta de crédito</h4> <!--ícono de la manito con signo de dólar -->
+                    </div>
+            </div>
+            
+                        <div class="nav-bar"> 
+                            <div class="site-navbar">
+                                <nav>
+                                    <ul class="left-navbar">
+                                        <li><a href="#">Ofertas</a></li>
+                                        <li><a href="#">Tiendas oficiales</a></li>
+                                        <li><a href="#">Vender</a></li>
+                                        <li><a href="">Ayuda</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+            
+                            <div class="site-navbar"> 
+                                    <nav>
+                                        <ul class="right-navbar">
+                                            <li><a href="./register.html">Crea tu cuenta</a><i class="fa-solid fa-address-card"></i></li>
+                                            <li><a href="#">Ingresa</a><i class="fa-solid fa-arrow-right-to-bracket"></i></li>
+                                            <li><a href="#">Mis Compras</a><i class="fa-solid fa-baby-carriage"></i></li>
+                           
+                                        </ul>
+                                    </nav>
+                                </div>
+            
+                        </div>
+            
+                        <div class="burger-menu">
+                            <i class="fas fa-bars"></i>
+                        </div> 
+                 
+                
+            </header>
+            
+
+      <div class="testbox">
+        <form action="/" method="post">
+          <h2><strong>Bienvenido al formualrio de registro de MercadoLiebre</strong></h2>
+          <!-- <h5>Personal Information</h5> -->
+          <div class="item">
+            <p><strong>Nombres</strong></p>
+            <div class="name-item">
+              <input type="text" name="name" placeholder="Ingrese sus nombres completos" />
+              <input type="text" name="name" placeholder="Ingrese sus apellidos" />
+            </div>
+          </div>
+          <div class="item">
+            <p><strong>Usuario</strong></p>
+            <input type="text" name="name" />
+          </div>
+          <div class="item">
+            <p><strong>Fecha de nacimiento</strong></p>
+            <input type="date" name="name"/>
+          </div>
+
+          <div class="item preferred-metod">
+            <p><strong>Seleccione su perfil deseado</strong></p>
+            <div class="preferred-metod-item">
+              <label><input type="checkbox" name="name"> <span>Comprar</span></label>
+              <label><input type="checkbox" name="name"> <span>Vender</span></label>
+            </div>
+          </div>
+
+          <div class="item">
+            <p><strong>Domicilio</strong></p>
+            <input type="text" name="name" placeholder="Ingrese su dirección de residencia"/>
+           
+            <!-- <div class="city-item">
+              <select>
+                <option value="">Country</option>
+                <option value="1">Russia</option>
+                <option value="2">Germany</option>
+                <option value="3">France</option>
+                <option value="4">Armenia</option>
+                <option value="5">USA</option>
+              </select>
+            </div> -->
+            <label><strong>Intereses</strong></label>
+            <input type="checkbox" name="interes" value="Electro"> 
+                <label>Moda</label>
+                <input type="checkbox" name="interes" value="Moda"> 
+                <label>Hogar</label>
+                <input type="checkbox" name="interes" value="Hogar">
+                <label>Jueguetería</label>
+                <input type="checkbox" name="interes" value="Juguetería"> 
+                <label>Vida sana</label>
+                <input type="checkbox" name="interes" value="Vida-sana"> 
+            </div>
+
+          <div class="item">
+            <p><strong>Email</strong></p>
+            <input type="email" name="name" placeholder="usuario@ejemplo.com"/>
+          </div>
+
+          <div class="item">
+            <p><strong>Número telefónico</strong></p>
+            <input type="text" name="name" placeholder="123-456-789"/>
+          </div>
+
+          <div class="item">
+            <p><strong>Ingrese una Contraseña</strong></p>
+            <input type="password" name="name" placeholder="******"/>
+          </div>
+          
+          
+          <div class="item">
+            <p><strong>Confirmar Contraseña</strong></p>
+            <input type="password" name="name" placeholder="******"/>
+          </div>
+
+          <div class="item">
+            <p>
+                <labe><strong>Foto de usuario</strong></labe>
+                <input type="file" accept=".jpg,.jpeg,.png">
+            </p>
+          </div> 
+          
+
+          <!-- <h5>Information about your complaint</h5>
+          <div class="item">
+            <p>First date on which the events or issues occurred</p>
+            <input type="date" name="name" required/>
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+           -->
+          <!-- <div class="item">
+            <p>Name(s) of the person(s) involved</p>
+            <textarea rows="5"></textarea>
+          </div> -->
+
+          <!-- <div class="item">
+            <p>Please describe your complaint in detail. Include the names of persons, locations, and dates involved. If this complaint is against specific person(s), please list their names and titles</p>
+            <textarea rows="5"></textarea>
+          </div> -->
+
+          <!-- <div class="item">
+            <p>What attempts have you made to resolve this complaint up to now? Please state who you contacted and what transpired</p>
+            <textarea rows="5"></textarea>
+          </div> -->
+
+          <!-- <div class="item">
+            <p>Why do you think the complaint was not able to be resolved in your prior attempts?</p>
+            <textarea rows="5"></textarea>
+          </div>
+           -->
+          <!-- <div class="item">
+            <p>What resolution would you consider fair? What resolution do you seek?</p>
+            <textarea rows="5"></textarea>
+          </div> -->
+
+          <!-- <div class="item">
+            <p>Any other information you want to provide?</p>
+            <textarea rows="5"></textarea>
+          </div> -->
+
+
+
+          <div class="btn-block">
+            <button type="submit" href="/" value="enviar">ENVIAR</button>
+            <button type="reset" href="/" value="reset">LIMPIAR</button>
+          </div>
+        </form>
     </div>
+   
+    
 
 </body>
 </html>
