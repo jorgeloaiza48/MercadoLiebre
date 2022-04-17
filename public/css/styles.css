@@ -114,11 +114,7 @@ section{
     text-align: justify;
     }
 
-    .delivery .fa-truck{
-        color: green;
-        
-
-    }
+  
 
     .delivery .truck-circle{
         background-color: white;
@@ -183,7 +179,7 @@ section{
         }    
     }
 
-    /* Navegación en tablets */
+    /* Navegación en tablets *******************************************************/
     @media(min-width:768px){
      
      .burger-menu{
@@ -235,21 +231,15 @@ section{
        
     }
 
-     
-
     .site-navbar nav ul li{
         margin:  7px; 
         }
 
-
-
-    .site-navbar nav ul li a{
+   .site-navbar nav ul li a{
        
         font-size: 11px;
         text-decoration: none;
-        font-weight: bold;
-       
-        
+        font-weight: bold;            
     }
 
     .site-navbar li{
@@ -278,11 +268,9 @@ section{
 
      .principal-ofertas-item{
          width: 335px;
-        
-         
+                
      }
-
-    }
+    
 
     .search-container form{
         display: flex;
@@ -305,6 +293,82 @@ section{
     font-size: larger;      
         
     }
+
+    .div-principal-section1 div{
+        width: 340px;
+}
+
+.div-principal-section1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin: 1px;
+}
+
+main h1{
+   text-align: center;
+   
+}
+
+.section1-producto{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 10px;
+    margin: 2px;
+    
+}
+
+.section1-producto h4{
+    text-align: left;
+
+}
+
+.section1-producto-precio-dto{
+    display: flex;
+    text-align: left;
+    border-top: solid 1px grey;
+    
+   
+}
+
+.truck{
+    border: solid 1px green;
+    max-width: 25px;
+    border-radius: 50%;
+    margin-left: 310px;
+    /* position: absolute; */
+    top: 550px;
+   
+   
+}
+
+.dto{
+   
+    margin-left: 6%;
+    color: green;
+}
+
+.section1-producto-precio-dto precio{
+    flex-grow: 0.3;
+    
+}
+
+.section1-producto-precio-dto dto{
+    flex-grow: 0.7;
+}
+
+ .section1-producto .fa-truck{
+
+   color: green;
+  
+} 
+
+main{
+    margin-bottom: 2%;
+    border-bottom: #a9a9a9;
+}
 
    
 
@@ -534,7 +598,7 @@ html, body {
 
 
  
-    @media (min-width: 568px) {
+    /* @media (min-width: 568px) {
     .name-item, .city-item {
     display: flex;
     flex-wrap: wrap;
@@ -545,5 +609,5 @@ html, body {
     }
     .city-item select {
     width: calc(50% - 8px);
-    }
+    } */
     }
