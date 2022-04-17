@@ -167,10 +167,11 @@
           <div class="item">
               <div class="nom-apellido">
                 <p><strong>Nombres</strong></p> 
-                <p><strong>Apellido</strong></p>
+                
               </div>
             <div class="name-item">
               <input type="text" name="name" placeholder="Ingrese sus nombres completos" required minlength="3" />
+              <p><strong>Apellidos</strong></p>
               <input type="text" name="name" placeholder="Ingrese sus apellidos" required min="3"/>
             </div>
           </div>
@@ -205,17 +206,18 @@
                 <option value="5">USA</option>
               </select>
             </div> -->
-            <label><strong>Intereses</strong></label>
-            <input type="checkbox" name="interes" value="Electro"> 
-                <label>Moda</label>
-                <input type="checkbox" name="interes" value="Moda"> 
-                <label>Hogar</label>
-                <input type="checkbox" name="interes" value="Hogar">
-                <label>Jueguetería</label>
-                <input type="checkbox" name="interes" value="Juguetería"> 
-                <label>Vida sana</label>
-                <input type="checkbox" name="interes" value="Vida-sana"> 
-            </div>
+          </div>
+
+            <div class="item preferred-metod">
+            <p><strong>Intereses</strong></p>
+            <div class="preferred-metod-item">
+            <label><input type="checkbox" name="interes" value="Moda"> <span> Moda</span> </label>
+            <label><input type="checkbox" name="interes" value="Hogar"> <span>Vender</span></label>
+            <label><input type="checkbox" name="interes" value="Jugueteria"> <span>Vender</span></label>
+            <label><input type="checkbox" name="name" value="VidaSana"> <span>Vender</span></label>
+          </div>
+             </div>    
+           
 
           <div class="item">
             <p><strong>Email</strong></p>
@@ -229,13 +231,13 @@
 
           <div class="item">
             <p><strong>Ingrese una Contraseña</strong></p>
-            <input type="password" name="name" placeholder="******" required/>
+            <input type="password" name="name" placeholder="******" required  minlength="5" pattern="[A-Za-z0-9]" /> <!--Sólo se permiten letras (mayúsculas y minúsculas) y números: pattern="[A-Za-z0-9]+" -->
           </div>
           
           
           <div class="item">
             <p><strong>Confirmar Contraseña</strong></p>
-            <input type="password" name="name" placeholder="******" required/>
+             <input type="password" name="name" placeholder="******" required  minlength="5"  pattern="[A-Za-z0-9]"/> <!--Sólo se permiten letras (mayúsculas y minúsculas) y números: pattern="[A-Za-z0-9]+" -->
           </div>
 
           <div class="item">

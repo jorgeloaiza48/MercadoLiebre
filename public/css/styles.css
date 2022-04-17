@@ -47,6 +47,8 @@ h1{
 
 .precio{
     font-size: 18px;
+    font-weight: bold;
+    color: black;
 }
 
 .dto{
@@ -167,16 +169,74 @@ section{
 
     /* Navegación en móviles */
     @media(min-width: 361px){
-        .delivery .descripcion{
+        /* .delivery descripcion{
             color: white;                      
-        }
+        } */
         .site-navbar{
             display: none;
             }
 
         .nav-bar{
             display: none;
-        }    
+        }  
+        
+        .section1-producto-precio-dto{
+            display: flex;
+            border-top: solid 1px grey;
+            
+        
+        }
+
+        .section1-producto{
+            background-color: #fff;
+            border: solid 6px gainsboro;
+            
+        }
+
+        .precio{
+           
+            padding-left: 10px;
+           
+        }
+
+        .dto{
+            color: green;
+            padding-left: 20px;
+        }
+
+        .descripcion{
+            padding-left: 10px;
+        }
+
+        .truck{
+            
+            border: solid 1px green;
+            background-color: #fff; 
+            border-radius: 70%;
+            max-width: 300px;
+            margin-left: 280px;
+            margin-right: 15px;
+            position: relative;
+            top: 10px;
+            
+                                         
+        }
+
+        .fa-truck{
+            font-size: 11px;
+            padding-left: 2px;
+            color: green;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .copyright{
+            font-size:medium;
+        }
+
+
     }
 
     /* Navegación en tablets *******************************************************/
@@ -316,7 +376,8 @@ main h1{
     flex-direction: column;
     background-color: #fff;
     width: 10px;
-    margin: 2px;
+    margin-bottom: 20px;
+  
     
 }
 
@@ -328,8 +389,7 @@ main h1{
 .section1-producto-precio-dto{
     display: flex;
     text-align: left;
-    border-top: solid 1px grey;
-    
+    border-top: solid 1px grey;  
    
 }
 
@@ -337,10 +397,10 @@ main h1{
     border: solid 1px green;
     max-width: 25px;
     border-radius: 50%;
-    margin-left: 310px;
-    /* position: absolute; */
-    top: 550px;
-   
+    margin-left: 280px;
+    position: relative;
+    top: 10px;
+    background-color: #fff;
    
 }
 
@@ -372,20 +432,20 @@ main{
 
    
 
-    /* Navegación en desktop */
+    /* Navegación en desktop *************************************************************/
     @media(min-width:992px){
-        .delivery, main{
+        /* .delivery, main{
             box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        }
+        } */
 
-        .site-navbar{
+        /* .site-navbar{
             display:inline;
-        }
+        } */
 
         .burger-menu{
             display: none;
         }
-
+/* 
         .principal{
             display: flex;
             flex-wrap: wrap;
@@ -404,15 +464,56 @@ main{
    
         .principal-ofertas-item{
             width: 215px;
-           
+          
+            
+        } */
+
+
+.div-principal-section1 .section1-producto{
+    width: 20%;
+}
+
+.div-principal-section1{
+    display: flex; 
+    flex-wrap: wrap;                  
+        }
+
+.section1-producto{
+   background-color: #fff;                                                          
             
         }
+
+
+ .section1-producto  .section1-producto-precio-dto{
+         /* display: flex;
+            text-align: left; */
+            width: auto;
+            border-top: solid 1px grey;  
+           
+        }
+
+
+
+.truck{
+    margin-left: 170px;
+    margin-left: 125px;
+
+}
+
+.descripcion{
+    padding-left: 10px;
+}
+
+.precio{
+    padding-left: 10px;
+}
+
    
 
 
     }
 
-/* *************************************************Formulario********************************************* */
+/*********************************************Formulario inicio de sesión****************************** */
 
 .login-main{
     background-color: #ebebeb;
@@ -565,15 +666,19 @@ html, body {
         text-align: center;
     }
 
-    .nom-apellido{
+    /* .nom-apellido{
         display: flex;
         justify-content: space-around;
-    }
+    } */
   
     /* Muestra los campos input en amarillo */
     /* form input:required{
         border: solid 2px yellow;
     } */
+
+
+   
+
 
     /*Si el valor que el usuario escribe es valido, obtendra un color verde*/
     form input[type="text"]:required:valid{
@@ -595,19 +700,14 @@ html, body {
     border:2px solid red;
         }
     
-
-
- 
-    /* @media (min-width: 568px) {
-    .name-item, .city-item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     }
-    .name-item input, .city-item input {
-    width: calc(50% - 20px);
-    }
-    .city-item select {
-    width: calc(50% - 8px);
-    } */
+
+    /* **************FORMULARIO DE REGISTRO*************************** */
+
+    .register-main{
+        background-color: #ebebeb;
+        width: 40%;
+        margin-top: 30px;
+        
+
     }
