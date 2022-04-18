@@ -13,6 +13,10 @@ header{
     margin: auto;
     background-color: #EAC926;
     font-family: 'Roboto', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
    
 }
 
@@ -21,7 +25,8 @@ main{
     background-color: #ebebeb;
     margin-bottom: 20px;
     margin: auto;
-           
+    margin-top: 15%;
+              
 }
 
 
