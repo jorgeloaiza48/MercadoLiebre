@@ -17,16 +17,15 @@ header{
     top: 0;
     width: 100%;
     z-index: 100;
-   
+      
 }
 
+
+
 main{
-    width: 90vw;
-    background-color: #ebebeb;
-    margin-bottom: 20px;
-    margin: auto;
-    margin-top: 15%;
-              
+    width: 100%;
+    background-color: #ebebeb;   
+               
 }
 
 
@@ -105,10 +104,16 @@ section{
 }
 
 .footer-c{
-    
     border-style:none;
+    display: flex;    
+    justify-content: center;
+    flex-wrap: wrap;
     margin: auto;
     
+}
+
+.footer-copyright{
+    width: 80%;
 }
 
 .just{
@@ -195,6 +200,7 @@ section{
         .section1-producto{
             background-color: #fff;
             border: solid 6px gainsboro;
+            border-radius: 5%;
             
         }
 
@@ -254,7 +260,13 @@ section{
      .header-principal{
          display: flex;
          justify-content: space-around;
+         margin-bottom: -2%;
+         width: 80%;
          
+     }
+
+     .home-header{
+         width: 100%;
      }
 
      .header-principal header-principal-item {
@@ -368,8 +380,10 @@ section{
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
-    margin: 1px;
+    margin-top: 5%;
 }
+
+
 
 main h1{
    text-align: center;
@@ -381,7 +395,7 @@ main h1{
     flex-direction: column;
     background-color: #fff;
     width: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   
     
 }
@@ -430,12 +444,58 @@ main h1{
   
 } 
 
-main{
-    margin-bottom: 2%;
-    border-bottom: #a9a9a9;
+
+/* ************Muestra la descripción del producto cuando se pasa el puntero por encima************* */
+.descripcion{
+    color: #fff;
+    transition: all 450ms;
 }
 
+.descripcion:hover{
+    color: black;
+
+}
+/* ************************************************************************************************** */
+
+/* ******Muestra una sombra alrededor de la imagen cuando se pasa el puntero por encima de ella******** */
+.section1-producto img{
    
+   transition: all 450ms;
+}
+
+.section1-producto img:hover{
+   
+    box-shadow: 5px 5px 20px 5px #095484;
+}
+/* ********************************************************************************************************** */
+
+/* ***********************************Rota 90 grados el camioncito hacia arriba************************* */
+.fa-truck{
+    transition: all 450ms;
+}
+
+.fa-truck:hover{
+    transform: rotateZ(-90deg);
+}
+/* **************************************************************************************************************** */
+
+.register-main{
+    width: 50%;
+}
+
+
+.basado-ultima-visita{
+    padding-top: 10%;
+}
+
+.div-banner{
+    border: solid 2px red;
+}
+
+
+}
+
+ 
 
     /* Navegación en desktop *************************************************************/
     @media(min-width:992px){
@@ -450,29 +510,6 @@ main{
         .burger-menu{
             display: none;
         }
-/* 
-        .principal{
-            display: flex;
-            flex-wrap: wrap;
-            
-        }
-   
-        .principal div{
-            width: 215px;
-        }
-   
-        .principal-ofertas{
-            display: flex;
-            flex-wrap: wrap;
-            
-        }
-   
-        .principal-ofertas-item{
-            width: 215px;
-          
-            
-        } */
-
 
 .div-principal-section1 .section1-producto{
     width: 20%;
@@ -513,7 +550,13 @@ main{
     padding-left: 10px;
 }
 
-   
+.footer-c i{
+    transition: all 450ms;
+}
+
+.footer-c i:hover{
+    color: red;
+}
 
 
     }
@@ -535,11 +578,8 @@ main form{
 
 .testbox-form-login{
     border-style: groove;
-    
-    margin-top: 10%;
+    margin-top: 25%;
     margin-bottom: 10%;
-    
-    
    
 }
 
@@ -572,11 +612,9 @@ html, body {
     justify-content: center;
     align-items: center;
     height: inherit;
-    padding: 3px;
-    /* border: ridge 2px red; */
     border-style: ridge;
-    width: 450px;
-    margin: auto;
+    width: auto;
+    margin-top: 25%;
     }
 
     form {
@@ -662,10 +700,10 @@ html, body {
     background-color: #095484;
     font-size: 16px;
     color: #fff;
-    cursor: pointer;
+    /* cursor: pointer; */
     }
     button:hover {
-    background-color: #0666a3;
+    background-color: #0022AA;
     }
     .testbox h2{
         text-align: center;
@@ -705,14 +743,6 @@ html, body {
     border:2px solid red;
         }
     
-    }
+    
 
     /* **************FORMULARIO DE REGISTRO*************************** */
-
-    .register-main{
-        background-color: #ebebeb;
-        width: 40%;
-        margin-top: 30px;
-        
-
-    }
