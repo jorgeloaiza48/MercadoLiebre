@@ -226,7 +226,7 @@ section{
             border-radius: 70%;
             max-width: 300px;
             margin-left: 280px;
-            margin-right: 15px;
+            /* margin-right: 15px; */
             position: relative;
             top: 10px;
             
@@ -235,7 +235,7 @@ section{
 
         .fa-truck{
             font-size: 11px;
-            padding-left: 5px;
+            padding-left: 2px;
             color: green;
            
         }
@@ -454,8 +454,9 @@ main h1{
  .section1-producto .fa-truck{
 
    color: green;
-  
-} 
+   
+}
+
 
 
 /* ************Muestra la descripción del producto cuando se pasa el puntero por encima************* */

@@ -11,8 +11,11 @@ app.use(express.static(publicPath))
 // app.use(express.static(publicPathStatic))
 
 //defiendo el puerto y levantando el servidor en dicho puerto
-let puerto = 3000
-app.listen(puerto,() => console.log("Servidor corriendo en el puerto ---> "+ puerto))//escucha en el puerto especificado
+// let puerto = 3000
+// app.listen(puerto,() => console.log("Servidor corriendo en el puerto ---> "+ puerto))//escucha en el puerto especificado
+
+//configuración para montar en Heroku
+app.listen(process.env.PORT || 3030, ()=> console.log("Server is running..."))
 
 //implementamos el requerimiento del recurso en la raiz o root '/'
 app.get('/',(req,res) => {res.sendFile(path.resolve(__dirname,'./views/home.html'))})
