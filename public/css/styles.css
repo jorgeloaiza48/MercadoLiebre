@@ -235,8 +235,9 @@ section{
 
         .fa-truck{
             font-size: 11px;
-            padding-left: 2px;
+            padding-left: 5px;
             color: green;
+           
         }
 
         h1{
@@ -247,10 +248,22 @@ section{
             font-size:medium;
         }
 
+        /* .home-header{
+            position: absolute;
+            top: 0;
+        } */
+
+        .main-home{
+            margin-top: 70%;
+        }
+
+        .truck{
+            width: 7%;
+        }
 
     }
 
-    /* Navegación en tablets *******************************************************/
+    /*########################## Navegación en tablets *******************************************************/
     @media(min-width:768px){
      
      .burger-menu{
@@ -488,9 +501,28 @@ main h1{
     padding-top: 10%;
 }
 
-.div-banner{
-    border: solid 2px red;
+.home-header .div-banner{
+     height: 140px;
+   
 }
+
+
+/* Centra el formulario de registro y de logeo */
+.register-main, .login-main{
+    margin: 0 auto;
+}
+
+/* Aumenta el espacio entre el footer y el main */
+footer{
+    margin-top: 5%;
+}
+
+.main-home{
+    margin-top: 15%;
+    
+}
+
+
 
 
 }

@@ -15,84 +15,7 @@
 
 <body>
     
-    <!-- <div class="form">
-        <form>
-            <p>
-                <label for="nombre">Nombres y apellidos</label>
-                <input type="text" name="nombre" placeholder="Igrese su nombre">
-            </p>
-
-            <p>
-                <label for="usuario">Nombre de usuario</label>
-                <input type="text" name="usuario">
-            </p>
-
-            <p>
-                <label for="fechaNacimiento">Fecha de nacimiento</label>
-                <input type="date" name="fechaNacimiento">
-            </p>
-        
-            <p>
-                <label for="Domicilio">Domicilio</label>
-                <input type="text" name="Domicilio">
-            </p>
-
-            <p>
-                <label for="email">Email</label>
-                <input type="email" name="email" placeholder="name@example.com" >
-            </p>
-
-            <p>
-                <label for="telefono">Telefono</label>
-                <input type="tel" name="telefono" placeholder="123-45-678">
-            </p>
-        
-            <p>
-                <label for="interes">Perfil de usuario ===></label>
-                <label>Comprar</label>
-                <input type="radio" name="interes" value="si">
-                <label>Vender</label>
-                <input type="radio" name="interes" value="no">
-            </p>
-
-            <p>
-                <label>Intereses</label><br>
-                <label>Electrónica</label>
-                <input type="checkbox" name="interes" value="Electro"> <br>
-                <label>Moda</label>
-                <input type="checkbox" name="interes" value="Moda"> <br>
-                <label>Hogar</label>
-                <input type="checkbox" name="interes" value="Hogar"><br> 
-                <label>Jueguetería</label>
-                <input type="checkbox" name="interes" value="Juguetería"> <br>
-                <label>Vida sana</label>
-                <input type="checkbox" name="interes" value="Vida-sana"> <br>
-            </p>
-
-            <p>
-                <labe>Foto de usuario</labe>
-                <input type="file" accept=".jpg,.jpeg,.png">
-            </p>
-
-            <p>
-                <label>Contraseña</label>
-                <input type="password" name="clave">
-            </p>
-
-            <p>
-                <label>Confirmar Contraseña</label>
-                <input type="password" name="clave">
-            </p>
-
-            <p>
-                <input type="submit" value="Enviar">
-                <input type="submit" value="Borrar">
-            </p>
-
-            
-
-        </form>
-    </div> -->
+    
 
    
   </head>
@@ -170,9 +93,9 @@
                 
               </div>
             <div class="name-item">
-              <input type="text" name="name" placeholder="Ingrese sus nombres completos" required minlength="3" />
+               <input type="text" name="name" placeholder="Ingrese sus nombres completos" required pattern="[A-Za-z]{20}" title="No se puede incluir números en el nombre o cualquier otro caracter diferente a letras." />  <!--input field that can contain only twenty letters (no numbers or special characters) -->
               <p><strong>Apellidos</strong></p>
-              <input type="text" name="name" placeholder="Ingrese sus apellidos" required min="3"/>
+              <input type="text" name="name" placeholder="Ingrese sus apellidos" required pattern="[A-Za-z]{20}" title="No se puede incluir números en el apellido o cualquier otro caracter diferente a letras."/> <!--input field that can contain only twenty letters (no numbers or special characters) -->
             </div>
           </div>
           <div class="item">
@@ -226,12 +149,12 @@
 
           <div class="item">
             <p><strong>Número telefónico</strong></p>
-            <input type="tel" name="name" placeholder="123-456-789" required/>
+            <input type="tel" name="name" placeholder="123-456-789"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" maxlength="10" required/>
           </div>
 
           <div class="item">
             <p><strong>Ingrese una Contraseña</strong></p>
-            <input type="password" name="name" placeholder="******" required  minlength="5" pattern="[A-Za-z0-9]" /> <!--Sólo se permiten letras (mayúsculas y minúsculas) y números: pattern="[A-Za-z0-9]+" -->
+            <input type="password" name="name" placeholder="******" required   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" /> <!-- type="password" that must contain 8 or more characters that are of at least one number, and one uppercase and lowercase letter -->
           </div>
           
           
