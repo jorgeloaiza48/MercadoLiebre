@@ -186,16 +186,40 @@ section{
        .home-header{
            display: flex ;
            flex-wrap: wrap;
+           flex-direction: column;
            position: absolute;
-        
+           top: 0;
+                             
+       }
+
+       .search-container{
+           /* border: solid 2px red; */
+           display: flex;
+           justify-content:center;
+           height: 2%;
+           
                      
        }
 
-       .div-banner{
-
-
+       .search-container form{
+         
+           width: 80%;
+           display: flex;
+           justify-content: center;
+           /* border: solid 2px blue; */
+           background-color: #EAC926;
        }
 
+       .search-container form button{
+           width: 15%;
+           height: 30px;
+       }
+
+       .search-container form input{
+           width:80%;
+           height: 30px;
+       }
+       
         .site-navbar{
             display: none;
             }
