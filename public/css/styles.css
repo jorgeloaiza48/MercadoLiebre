@@ -59,10 +59,7 @@ h1{
     font-size: 16px;
 }
 
-footer{
-    font-size: 12px;
-    text-align: center;  
-}
+
 
 .burger-menu{
     background-color:#1259c3;;
@@ -76,11 +73,11 @@ footer{
 
 }
 
-section{
+/* section{
     line-height: 1px;
     padding: 10px;
 
-}
+} */
 
 .fa-credit-card {
     font-size:xx-large;
@@ -102,7 +99,7 @@ section{
     padding: 5px;
     
 }
-
+/* 
 .footer-c{
     border-style:none;
     display: flex;    
@@ -114,17 +111,8 @@ section{
 
 .footer-copyright{
     width: 80%;
-}
+} */
 
-.just{
-    background-color:white;
-    width: 295px;
-    height: 95px;
-    margin: auto;
-    color: black;
-    line-height: 15px;
-    text-align: justify;
-    }
 
   
 
@@ -188,6 +176,13 @@ section{
             margin-top: 8px;
         }
 
+  
+   
+    footer{
+        /* font-size: 12px; */
+        text-align: center;  
+    }
+     
         .header-principal{
             display: flex;
             flex-direction: column;
@@ -197,11 +192,22 @@ section{
            display: flex ;
            flex-wrap: wrap;
            flex-direction: column;
-           position: absolute;
+           position: fixed;
            top: 0;
            margin-bottom: 2px;
                              
        }
+
+       .just{
+        background-color:white;
+        width: 295px;
+        height: 95px;
+        margin: auto;
+        color: black;
+        line-height: 15px;
+        text-align: justify;
+        }
+    
 
        .search-container{
            /* border: solid 2px red; */
@@ -305,11 +311,7 @@ section{
             text-align: center;
         }
 
-        .copyright{
-            font-size:medium;
-        }
-
-      
+            
         .main-home{
             margin-top: 70%;
         }
@@ -572,7 +574,7 @@ main h1{
 
 /* Aumenta el espacio entre el footer y el main */
 footer{
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
 .main-home{
