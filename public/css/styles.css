@@ -183,12 +183,23 @@ section{
             color: white;                      
         } */
 
+        .burger-menu{
+            /* border: solid 2px violet; */
+            margin-top: 8px;
+        }
+
+        .header-principal{
+            display: flex;
+            flex-direction: column;
+        }
+
        .home-header{
            display: flex ;
            flex-wrap: wrap;
            flex-direction: column;
            position: absolute;
            top: 0;
+           margin-bottom: 2px;
                              
        }
 
@@ -197,8 +208,20 @@ section{
            display: flex;
            justify-content:center;
            height: 2%;
-           
-                     
+          
+                            
+       }
+
+     /* .header-principal-item{
+         border: solid 2px green;
+     } */
+
+       .header-principal-item h4{
+         
+           text-align: center;
+           /* border: solid 2px blue; */
+           margin-top: 1px;
+         
        }
 
        .search-container form{
