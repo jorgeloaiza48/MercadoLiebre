@@ -178,10 +178,24 @@ section{
     /* ########################### Media Quieries ##################### */
 
     /* Navegación en móviles */
-    @media(min-width: 361px){
+    @media(min-width: 360px){
         /* .delivery descripcion{
             color: white;                      
         } */
+
+       .home-header{
+           display: flex ;
+           flex-wrap: wrap;
+           position: absolute;
+        
+                     
+       }
+
+       .div-banner{
+
+
+       }
+
         .site-navbar{
             display: none;
             }
@@ -248,11 +262,7 @@ section{
             font-size:medium;
         }
 
-        /* .home-header{
-            position: absolute;
-            top: 0;
-        } */
-
+      
         .main-home{
             margin-top: 70%;
         }
